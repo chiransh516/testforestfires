@@ -1,4 +1,7 @@
 <html>
+   <head>
+ <link rel="stylesheet" href="/static/style.css">
+</head>
 <body>
     <div class="login">
        <h1>FWI Prediction</h1>
@@ -19,8 +22,8 @@
    
            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
        </form>
-    <h2>
-       THE FWI prediction is {{result}}
-    </h2>
+    {% if result %}
+<h2>THE FWI prediction is {{ result }}</h2>
+{% endif %}
    <body>
 </html>
