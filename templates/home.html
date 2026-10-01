@@ -8,15 +8,15 @@
    
         <!-- Main Input For Receiving Query to our ML -->
        <form action="{{ url_for('predict_datapoint')}}" method="post">
-         <input type="text" name="Temperature" placeholder="Temperature" required="required" /><br>
-           <input type="text" name="RH" placeholder="RH" required="required" /><br>
-           <input type="text" name="Ws" placeholder="Ws" required="required" /><br>
-           <input type="text" name="Rain" placeholder="Rain" required="required" /><br>
-           <input type="text" name="FFMC" placeholder="FFMC" required="required" /><br>
-           <input type="text" name="DMC" placeholder="DMC" required="required" /><br>
-           <input type="text" name="ISI" placeholder="ISI" required="required" /><br>
-           <input type="text" name="Classes" placeholder="Classes" required="required" /><br>
-           <input type="text" name="Region" placeholder="Region" required="required" /><br>
+         <input type="text" name="Temperature" placeholder="Temperature (°C)" required="required" title="Temperature in Celsius" /><br>
+           <input type="text" name="RH" placeholder="Relative Humidity (%)" required="required" title="Relative Humidity in percentage" /><br>
+           <input type="text" name="Ws" placeholder="Wind Speed (km/h)" required="required" title="Wind speed in km/h" /><br>
+           <input type="text" name="Rain" placeholder="Rain (mm)" required="required" title="Total rain in mm" /><br>
+           <input type="text" name="FFMC" placeholder="FFMC (Fine Fuel Moisture)" required="required" title="Fine Fuel Moisture Code index" /><br>
+           <input type="text" name="DMC" placeholder="DMC (Duff Moisture Code)" required="required" title="Duff Moisture Code index" /><br>
+           <input type="text" name="ISI" placeholder="ISI (Initial Spread Index)" required="required" title="Initial Spread Index" /><br>
+           <input type="text" name="Classes" placeholder="Classes (0: No Fire, 1: Fire)" required="required" title="0 for Not Fire, 1 for Fire" /><br>
+           <input type="text" name="Region" placeholder="Region (0: Bejaia, 1: Sidi Bel-abbes)" required="required" title="0 for Bejaia Region, 1 for Sidi Bel-abbes Region" /><br>
    
    
    
